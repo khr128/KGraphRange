@@ -15,7 +15,6 @@
 		AE2E24CB1CB04B5B0057A3DA /* KGraghRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */; };
 		AE2E24D71CB04CAD0057A3DA /* KGRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */; };
 		AE2E24DA1CB0551A0057A3DA /* KGRangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24D91CB0551A0057A3DA /* KGRangeView.m */; };
-		AE2E24DD1CB066880057A3DA /* KGRangeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24DC1CB066880057A3DA /* KGRangeWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +44,6 @@
 		AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeViewController.m; sourceTree = "<group>"; };
 		AE2E24D81CB0551A0057A3DA /* KGRangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRangeView.h; sourceTree = "<group>"; };
 		AE2E24D91CB0551A0057A3DA /* KGRangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeView.m; sourceTree = "<group>"; };
-		AE2E24DB1CB066880057A3DA /* KGRangeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRangeWindow.h; sourceTree = "<group>"; };
-		AE2E24DC1CB066880057A3DA /* KGRangeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +97,6 @@
 				AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */,
 				AE2E24D81CB0551A0057A3DA /* KGRangeView.h */,
 				AE2E24D91CB0551A0057A3DA /* KGRangeView.m */,
-				AE2E24DB1CB066880057A3DA /* KGRangeWindow.h */,
-				AE2E24DC1CB066880057A3DA /* KGRangeWindow.m */,
 			);
 			path = KGraghRange;
 			sourceTree = "<group>";
@@ -223,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2E24DA1CB0551A0057A3DA /* KGRangeView.m in Sources */,
-				AE2E24DD1CB066880057A3DA /* KGRangeWindow.m in Sources */,
 				AE2E24D71CB04CAD0057A3DA /* KGRangeViewController.m in Sources */,
 				AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */,
 				AE2E24B81CB04B5B0057A3DA /* main.m in Sources */,
