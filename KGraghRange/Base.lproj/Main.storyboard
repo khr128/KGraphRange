@@ -696,7 +696,7 @@
         <scene sceneID="8JF-DK-iYO">
             <objects>
                 <viewController id="MYf-qU-5PD" customClass="KGRangeViewController" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="Qas-Aq-HKP">
+                    <view key="view" wantsLayer="YES" id="Qas-Aq-HKP" customClass="KGRangeView">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>

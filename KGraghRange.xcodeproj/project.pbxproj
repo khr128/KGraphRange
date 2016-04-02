@@ -14,6 +14,7 @@
 		AE2E24C01CB04B5B0057A3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2E24BE1CB04B5B0057A3DA /* Main.storyboard */; };
 		AE2E24CB1CB04B5B0057A3DA /* KGraghRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */; };
 		AE2E24D71CB04CAD0057A3DA /* KGRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */; };
+		AE2E24DA1CB0551A0057A3DA /* KGRangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24D91CB0551A0057A3DA /* KGRangeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		AE2E24CC1CB04B5B0057A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2E24D51CB04CAD0057A3DA /* KGRangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRangeViewController.h; sourceTree = "<group>"; };
 		AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeViewController.m; sourceTree = "<group>"; };
+		AE2E24D81CB0551A0057A3DA /* KGRangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRangeView.h; sourceTree = "<group>"; };
+		AE2E24D91CB0551A0057A3DA /* KGRangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				AE2E24B61CB04B5B0057A3DA /* Supporting Files */,
 				AE2E24D51CB04CAD0057A3DA /* KGRangeViewController.h */,
 				AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */,
+				AE2E24D81CB0551A0057A3DA /* KGRangeView.h */,
+				AE2E24D91CB0551A0057A3DA /* KGRangeView.m */,
 			);
 			path = KGraghRange;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2E24DA1CB0551A0057A3DA /* KGRangeView.m in Sources */,
 				AE2E24D71CB04CAD0057A3DA /* KGRangeViewController.m in Sources */,
 				AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */,
 				AE2E24B81CB04B5B0057A3DA /* main.m in Sources */,
