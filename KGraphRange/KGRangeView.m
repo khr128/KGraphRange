@@ -1,6 +1,6 @@
 //
 //  KGRangeView.m
-//  KGraghRange
+//  KGraphRange
 //
 //  Created by khr on 4/2/16.
 //  Copyright © 2016 khr. All rights reserved.
@@ -85,7 +85,10 @@
                                    NSHeight(self.bounds));
 
   NSTrackingArea *trackingArea = [[NSTrackingArea alloc] initWithRect:trackingRect
-                                                              options:NSTrackingMouseEnteredAndExited | NSTrackingActiveInKeyWindow
+                                                              options:
+                                  NSTrackingMouseEnteredAndExited
+                                  | NSTrackingCursorUpdate
+                                  | NSTrackingActiveInKeyWindow
                                                                 owner:self
                                                              userInfo:@{
                                                                         @"type" : trackingAreaType
@@ -143,6 +146,22 @@
 
   _enteredTrackingArea = NO;
   self.needsDisplay = YES;
+
+}
+
+- (void)cursorUpdate:(NSEvent *)event {
+
+  NSDictionary *userData = event.userData;
+  if (userData && [userData[@"type"] isEqualToString:@"low"]) {
+
+    [self addCursorRect:_lowTrackingRect cursor:[NSCursor resizeLeftRightCursor]];
+
+  } else if (userData && [userData[@"type"] isEqualToString:@"high"]) {
+
+    [self addCursorRect:_highTrackingRect cursor:[NSCursor resizeLeftRightCursor]];
+
+  }
+
 
 }
 

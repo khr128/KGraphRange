@@ -1,6 +1,6 @@
 //
-//  AppDelegate.h
-//  KGraghRange
+//  ViewController.h
+//  KGraphRange
 //
 //  Created by khr on 4/2/16.
 //  Copyright © 2016 khr. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface ViewController : NSViewController
 
 
 @end

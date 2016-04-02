@@ -1,6 +1,6 @@
 //
 //  KGRangeView.h
-//  KGraghRange
+//  KGraphRange
 //
 //  Created by khr on 4/2/16.
 //  Copyright © 2016 khr. All rights reserved.

@@ -12,7 +12,7 @@
 		AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24BA1CB04B5B0057A3DA /* ViewController.m */; };
 		AE2E24BD1CB04B5B0057A3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2E24BC1CB04B5B0057A3DA /* Assets.xcassets */; };
 		AE2E24C01CB04B5B0057A3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2E24BE1CB04B5B0057A3DA /* Main.storyboard */; };
-		AE2E24CB1CB04B5B0057A3DA /* KGraghRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */; };
+		AE2E24CB1CB04B5B0057A3DA /* KGraphRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24CA1CB04B5B0057A3DA /* KGraphRangeTests.m */; };
 		AE2E24D71CB04CAD0057A3DA /* KGRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */; };
 		AE2E24DA1CB0551A0057A3DA /* KGRangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24D91CB0551A0057A3DA /* KGRangeView.m */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE2E24B01CB04B5B0057A3DA /* KGraghRange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGraghRange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2E24B01CB04B5B0057A3DA /* KGraphRange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGraphRange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2E24B31CB04B5B0057A3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE2E24B71CB04B5B0057A3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,8 +37,8 @@
 		AE2E24BC1CB04B5B0057A3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2E24BF1CB04B5B0057A3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE2E24C11CB04B5B0057A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE2E24C61CB04B5B0057A3DA /* KGraghRangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGraghRangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KGraghRangeTests.m; sourceTree = "<group>"; };
+		AE2E24C61CB04B5B0057A3DA /* KGraphRangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGraphRangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2E24CA1CB04B5B0057A3DA /* KGraphRangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KGraphRangeTests.m; sourceTree = "<group>"; };
 		AE2E24CC1CB04B5B0057A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2E24D51CB04CAD0057A3DA /* KGRangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRangeViewController.h; sourceTree = "<group>"; };
 		AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeViewController.m; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		AE2E24A71CB04B5B0057A3DA = {
 			isa = PBXGroup;
 			children = (
-				AE2E24B21CB04B5B0057A3DA /* KGraghRange */,
-				AE2E24C91CB04B5B0057A3DA /* KGraghRangeTests */,
+				AE2E24B21CB04B5B0057A3DA /* KGraphRange */,
+				AE2E24C91CB04B5B0057A3DA /* KGraphRangeTests */,
 				AE2E24B11CB04B5B0057A3DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,13 +76,13 @@
 		AE2E24B11CB04B5B0057A3DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE2E24B01CB04B5B0057A3DA /* KGraghRange.app */,
-				AE2E24C61CB04B5B0057A3DA /* KGraghRangeTests.xctest */,
+				AE2E24B01CB04B5B0057A3DA /* KGraphRange.app */,
+				AE2E24C61CB04B5B0057A3DA /* KGraphRangeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE2E24B21CB04B5B0057A3DA /* KGraghRange */ = {
+		AE2E24B21CB04B5B0057A3DA /* KGraphRange */ = {
 			isa = PBXGroup;
 			children = (
 				AE2E24B31CB04B5B0057A3DA /* AppDelegate.h */,
@@ -98,7 +98,7 @@
 				AE2E24D81CB0551A0057A3DA /* KGRangeView.h */,
 				AE2E24D91CB0551A0057A3DA /* KGRangeView.m */,
 			);
-			path = KGraghRange;
+			path = KGraphRange;
 			sourceTree = "<group>";
 		};
 		AE2E24B61CB04B5B0057A3DA /* Supporting Files */ = {
@@ -109,21 +109,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE2E24C91CB04B5B0057A3DA /* KGraghRangeTests */ = {
+		AE2E24C91CB04B5B0057A3DA /* KGraphRangeTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */,
+				AE2E24CA1CB04B5B0057A3DA /* KGraphRangeTests.m */,
 				AE2E24CC1CB04B5B0057A3DA /* Info.plist */,
 			);
-			path = KGraghRangeTests;
+			path = KGraphRangeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE2E24AF1CB04B5B0057A3DA /* KGraghRange */ = {
+		AE2E24AF1CB04B5B0057A3DA /* KGraphRange */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE2E24CF1CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRange" */;
+			buildConfigurationList = AE2E24CF1CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraphRange" */;
 			buildPhases = (
 				AE2E24AC1CB04B5B0057A3DA /* Sources */,
 				AE2E24AD1CB04B5B0057A3DA /* Frameworks */,
@@ -133,14 +133,14 @@
 			);
 			dependencies = (
 			);
-			name = KGraghRange;
+			name = KGraphRange;
 			productName = KGraghRange;
-			productReference = AE2E24B01CB04B5B0057A3DA /* KGraghRange.app */;
+			productReference = AE2E24B01CB04B5B0057A3DA /* KGraphRange.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE2E24C51CB04B5B0057A3DA /* KGraghRangeTests */ = {
+		AE2E24C51CB04B5B0057A3DA /* KGraphRangeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE2E24D21CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRangeTests" */;
+			buildConfigurationList = AE2E24D21CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraphRangeTests" */;
 			buildPhases = (
 				AE2E24C21CB04B5B0057A3DA /* Sources */,
 				AE2E24C31CB04B5B0057A3DA /* Frameworks */,
@@ -151,9 +151,9 @@
 			dependencies = (
 				AE2E24C81CB04B5B0057A3DA /* PBXTargetDependency */,
 			);
-			name = KGraghRangeTests;
+			name = KGraphRangeTests;
 			productName = KGraghRangeTests;
-			productReference = AE2E24C61CB04B5B0057A3DA /* KGraghRangeTests.xctest */;
+			productReference = AE2E24C61CB04B5B0057A3DA /* KGraphRangeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -174,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AE2E24AB1CB04B5B0057A3DA /* Build configuration list for PBXProject "KGraghRange" */;
+			buildConfigurationList = AE2E24AB1CB04B5B0057A3DA /* Build configuration list for PBXProject "KGraphRange" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,8 +187,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE2E24AF1CB04B5B0057A3DA /* KGraghRange */,
-				AE2E24C51CB04B5B0057A3DA /* KGraghRangeTests */,
+				AE2E24AF1CB04B5B0057A3DA /* KGraphRange */,
+				AE2E24C51CB04B5B0057A3DA /* KGraphRangeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2E24CB1CB04B5B0057A3DA /* KGraghRangeTests.m in Sources */,
+				AE2E24CB1CB04B5B0057A3DA /* KGraphRangeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +238,7 @@
 /* Begin PBXTargetDependency section */
 		AE2E24C81CB04B5B0057A3DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE2E24AF1CB04B5B0057A3DA /* KGraghRange */;
+			target = AE2E24AF1CB04B5B0057A3DA /* KGraphRange */;
 			targetProxy = AE2E24C71CB04B5B0057A3DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,9 +341,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = KGraghRange/Info.plist;
+				INFOPLIST_FILE = KGraphRange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRange;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraphRange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,9 +353,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = KGraghRange/Info.plist;
+				INFOPLIST_FILE = KGraphRange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRange;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraphRange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -365,11 +365,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = KGraghRangeTests/Info.plist;
+				INFOPLIST_FILE = KGraphRangeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRangeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraphRangeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGraghRange.app/Contents/MacOS/KGraghRange";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGraphRange.app/Contents/MacOS/KGraphRange";
 			};
 			name = Debug;
 		};
@@ -378,18 +378,18 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = KGraghRangeTests/Info.plist;
+				INFOPLIST_FILE = KGraphRangeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRangeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraphRangeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGraghRange.app/Contents/MacOS/KGraghRange";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGraphRange.app/Contents/MacOS/KGraphRange";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE2E24AB1CB04B5B0057A3DA /* Build configuration list for PBXProject "KGraghRange" */ = {
+		AE2E24AB1CB04B5B0057A3DA /* Build configuration list for PBXProject "KGraphRange" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE2E24CD1CB04B5B0057A3DA /* Debug */,
@@ -398,21 +398,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE2E24CF1CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRange" */ = {
+		AE2E24CF1CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraphRange" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE2E24D01CB04B5B0057A3DA /* Debug */,
 				AE2E24D11CB04B5B0057A3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		AE2E24D21CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRangeTests" */ = {
+		AE2E24D21CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraphRangeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE2E24D31CB04B5B0057A3DA /* Debug */,
 				AE2E24D41CB04B5B0057A3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

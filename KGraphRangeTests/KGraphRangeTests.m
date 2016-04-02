@@ -1,6 +1,6 @@
 //
-//  KGraghRangeTests.m
-//  KGraghRangeTests
+//  KGraphRangeTests.m
+//  KGraphRangeTests
 //
 //  Created by khr on 4/2/16.
 //  Copyright © 2016 khr. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface KGraghRangeTests : XCTestCase
+@interface KGraphRangeTests : XCTestCase
 
 @end
 
-@implementation KGraghRangeTests
+@implementation KGraphRangeTests
 
 - (void)setUp {
     [super setUp];
