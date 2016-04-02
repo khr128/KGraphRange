@@ -32,9 +32,9 @@
 
   _selectedPartColor = [NSColor colorWithRed:24.0f / 255.0f green:124.0f / 255.0f blue:31.0f / 255.0f alpha:1.0f];
   _unselectedPartColor = [NSColor colorWithRed:214.0f / 255.0f green:24.0f / 255.0f blue:31.0f / 255.0f alpha:1.0f];
-  _trackingAreaColor = [NSColor colorWithRed:220.0f / 255.0f green:214.0f / 255.0f blue:214.0f / 255.0f alpha:0.2f];
+  _trackingAreaColor = [NSColor colorWithRed:220.0f / 255.0f green:214.0f / 255.0f blue:214.0f / 255.0f alpha:0.3f];
 
-  _trackingAreaHalfWidth = 20;
+  _trackingAreaHalfWidth = 5;
   _enteredTrackingArea = NO;
 
 }
@@ -95,6 +95,19 @@
   [self addTrackingArea:trackingArea];
 
   return trackingRect;
+}
+
+- (void)updateTrackingAreas {
+
+  [self.trackingAreas enumerateObjectsUsingBlock:^(NSTrackingArea *ta, NSUInteger idx, BOOL *stop) {
+
+    [self removeTrackingArea:ta];
+
+  }];
+
+  _lowTrackingRect = [self addTrackingAreaForType:@"low"];
+  _highTrackingRect = [self addTrackingAreaForType:@"high"];
+  
 }
 
 - (void)viewDidMoveToWindow {
