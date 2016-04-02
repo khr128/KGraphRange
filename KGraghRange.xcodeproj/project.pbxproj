@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE2E24B51CB04B5B0057A3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */; };
+		AE2E24B81CB04B5B0057A3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24B71CB04B5B0057A3DA /* main.m */; };
+		AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24BA1CB04B5B0057A3DA /* ViewController.m */; };
+		AE2E24BD1CB04B5B0057A3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2E24BC1CB04B5B0057A3DA /* Assets.xcassets */; };
+		AE2E24C01CB04B5B0057A3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2E24BE1CB04B5B0057A3DA /* Main.storyboard */; };
+		AE2E24CB1CB04B5B0057A3DA /* KGraghRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE2E24C71CB04B5B0057A3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE2E24A81CB04B5B0057A3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2E24AF1CB04B5B0057A3DA;
+			remoteInfo = KGraghRange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE2E24B01CB04B5B0057A3DA /* KGraghRange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGraghRange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2E24B31CB04B5B0057A3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE2E24B71CB04B5B0057A3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE2E24B91CB04B5B0057A3DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE2E24BA1CB04B5B0057A3DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE2E24BC1CB04B5B0057A3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE2E24BF1CB04B5B0057A3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE2E24C11CB04B5B0057A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2E24C61CB04B5B0057A3DA /* KGraghRangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGraghRangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KGraghRangeTests.m; sourceTree = "<group>"; };
+		AE2E24CC1CB04B5B0057A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE2E24AD1CB04B5B0057A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2E24C31CB04B5B0057A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE2E24A71CB04B5B0057A3DA = {
+			isa = PBXGroup;
+			children = (
+				AE2E24B21CB04B5B0057A3DA /* KGraghRange */,
+				AE2E24C91CB04B5B0057A3DA /* KGraghRangeTests */,
+				AE2E24B11CB04B5B0057A3DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE2E24B11CB04B5B0057A3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E24B01CB04B5B0057A3DA /* KGraghRange.app */,
+				AE2E24C61CB04B5B0057A3DA /* KGraghRangeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2E24B21CB04B5B0057A3DA /* KGraghRange */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E24B31CB04B5B0057A3DA /* AppDelegate.h */,
+				AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */,
+				AE2E24B91CB04B5B0057A3DA /* ViewController.h */,
+				AE2E24BA1CB04B5B0057A3DA /* ViewController.m */,
+				AE2E24BC1CB04B5B0057A3DA /* Assets.xcassets */,
+				AE2E24BE1CB04B5B0057A3DA /* Main.storyboard */,
+				AE2E24C11CB04B5B0057A3DA /* Info.plist */,
+				AE2E24B61CB04B5B0057A3DA /* Supporting Files */,
+			);
+			path = KGraghRange;
+			sourceTree = "<group>";
+		};
+		AE2E24B61CB04B5B0057A3DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E24B71CB04B5B0057A3DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE2E24C91CB04B5B0057A3DA /* KGraghRangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E24CA1CB04B5B0057A3DA /* KGraghRangeTests.m */,
+				AE2E24CC1CB04B5B0057A3DA /* Info.plist */,
+			);
+			path = KGraghRangeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE2E24AF1CB04B5B0057A3DA /* KGraghRange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2E24CF1CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRange" */;
+			buildPhases = (
+				AE2E24AC1CB04B5B0057A3DA /* Sources */,
+				AE2E24AD1CB04B5B0057A3DA /* Frameworks */,
+				AE2E24AE1CB04B5B0057A3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGraghRange;
+			productName = KGraghRange;
+			productReference = AE2E24B01CB04B5B0057A3DA /* KGraghRange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE2E24C51CB04B5B0057A3DA /* KGraghRangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2E24D21CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRangeTests" */;
+			buildPhases = (
+				AE2E24C21CB04B5B0057A3DA /* Sources */,
+				AE2E24C31CB04B5B0057A3DA /* Frameworks */,
+				AE2E24C41CB04B5B0057A3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE2E24C81CB04B5B0057A3DA /* PBXTargetDependency */,
+			);
+			name = KGraghRangeTests;
+			productName = KGraghRangeTests;
+			productReference = AE2E24C61CB04B5B0057A3DA /* KGraghRangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE2E24A81CB04B5B0057A3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = khr;
+				TargetAttributes = {
+					AE2E24AF1CB04B5B0057A3DA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					AE2E24C51CB04B5B0057A3DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AE2E24AF1CB04B5B0057A3DA;
+					};
+				};
+			};
+			buildConfigurationList = AE2E24AB1CB04B5B0057A3DA /* Build configuration list for PBXProject "KGraghRange" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE2E24A71CB04B5B0057A3DA;
+			productRefGroup = AE2E24B11CB04B5B0057A3DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE2E24AF1CB04B5B0057A3DA /* KGraghRange */,
+				AE2E24C51CB04B5B0057A3DA /* KGraghRangeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE2E24AE1CB04B5B0057A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2E24BD1CB04B5B0057A3DA /* Assets.xcassets in Resources */,
+				AE2E24C01CB04B5B0057A3DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2E24C41CB04B5B0057A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE2E24AC1CB04B5B0057A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */,
+				AE2E24B81CB04B5B0057A3DA /* main.m in Sources */,
+				AE2E24B51CB04B5B0057A3DA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2E24C21CB04B5B0057A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2E24CB1CB04B5B0057A3DA /* KGraghRangeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE2E24C81CB04B5B0057A3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2E24AF1CB04B5B0057A3DA /* KGraghRange */;
+			targetProxy = AE2E24C71CB04B5B0057A3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE2E24BE1CB04B5B0057A3DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2E24BF1CB04B5B0057A3DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE2E24CD1CB04B5B0057A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE2E24CE1CB04B5B0057A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE2E24D01CB04B5B0057A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KGraghRange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE2E24D11CB04B5B0057A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KGraghRange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE2E24D31CB04B5B0057A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KGraghRangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGraghRange.app/Contents/MacOS/KGraghRange";
+			};
+			name = Debug;
+		};
+		AE2E24D41CB04B5B0057A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KGraghRangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khr.KGraghRangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGraghRange.app/Contents/MacOS/KGraghRange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE2E24AB1CB04B5B0057A3DA /* Build configuration list for PBXProject "KGraghRange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2E24CD1CB04B5B0057A3DA /* Debug */,
+				AE2E24CE1CB04B5B0057A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2E24CF1CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2E24D01CB04B5B0057A3DA /* Debug */,
+				AE2E24D11CB04B5B0057A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE2E24D21CB04B5B0057A3DA /* Build configuration list for PBXNativeTarget "KGraghRangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2E24D31CB04B5B0057A3DA /* Debug */,
+				AE2E24D41CB04B5B0057A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE2E24A81CB04B5B0057A3DA /* Project object */;
+}
