@@ -19,11 +19,17 @@
   CGRect _highTrackingRect;
   CGRect _currentTrackingRect;
 
-  BOOL _enteredTrackingArea;
+  BOOL _enteredLowTrackingArea;
+  BOOL _enteredHighTrackingArea;
+  
+  BOOL _draggingLowTrackingArea;
+  BOOL _draggingHighTrackingArea;
 
   CGFloat _trackingAreaHalfWidth;
+  
 }
 
+static CGFloat kMinFractionDifference = 0.01;
 
 - (void)awakeFromNib {
 
@@ -31,11 +37,14 @@
   self.highFraction = 0.57f;
 
   _selectedPartColor = [NSColor colorWithRed:24.0f / 255.0f green:124.0f / 255.0f blue:31.0f / 255.0f alpha:1.0f];
-  _unselectedPartColor = [NSColor colorWithRed:214.0f / 255.0f green:24.0f / 255.0f blue:31.0f / 255.0f alpha:1.0f];
+  _unselectedPartColor = [NSColor colorWithRed:234.0f / 255.0f green:20.0f / 255.0f blue:3.0f / 255.0f alpha:1.0f];
   _trackingAreaColor = [NSColor colorWithRed:220.0f / 255.0f green:214.0f / 255.0f blue:214.0f / 255.0f alpha:0.3f];
 
   _trackingAreaHalfWidth = 5;
-  _enteredTrackingArea = NO;
+  _enteredLowTrackingArea = NO;
+  _enteredHighTrackingArea = NO;
+  _draggingHighTrackingArea = NO;
+  _draggingHighTrackingArea = NO;
 
 }
 
@@ -62,7 +71,7 @@
   CGContextSetFillColorWithColor(context, _selectedPartColor.CGColor);
   CGContextFillRect(context, _selectedPartRect);
 
-  if (_enteredTrackingArea) {
+  if (_enteredLowTrackingArea || _enteredHighTrackingArea) {
 
     CGContextSetFillColorWithColor(context, _trackingAreaColor.CGColor);
     CGContextFillRect(context, _currentTrackingRect);
@@ -124,32 +133,99 @@
 }
 
 - (void)mouseEntered:(NSEvent *)theEvent {
+  
+  if (_draggingHighTrackingArea || _draggingLowTrackingArea) {
+    
+    return;
+    
+  }
 
   NSDictionary *userData = theEvent.userData;
 
   if (userData && [userData[@"type"] isEqualToString:@"low"]) {
 
     _currentTrackingRect = _lowTrackingRect;
+    _enteredLowTrackingArea = YES;
 
   } else if (userData && [userData[@"type"] isEqualToString:@"high"]) {
 
     _currentTrackingRect = _highTrackingRect;
+    _enteredHighTrackingArea = YES;
 
   }
 
-  _enteredTrackingArea = YES;
+  self.needsDisplay = YES;
+  
+}
+
+- (void)mouseDragged:(NSEvent *)theEvent {
+  
+  NSPoint eventLocation = theEvent.locationInWindow;
+  NSPoint localPoint = [self convertPoint:eventLocation fromView:nil];
+  
+  CGFloat fraction = localPoint.x / NSWidth(self.bounds);
+  
+  NSLog(@"Local point: (%g, %g)", localPoint.x, localPoint.y);
+  NSLog(@"Low x: %g, fraction: %g", _lowFraction * NSWidth(self.bounds), fraction);
+  
+  if (_enteredLowTrackingArea || _draggingLowTrackingArea) {
+    
+    if (_draggingLowTrackingArea == NO) {
+      
+      _draggingLowTrackingArea = YES;
+      _enteredLowTrackingArea = NO;
+      _enteredHighTrackingArea = NO;
+      
+    }
+    
+    if (fraction < _highFraction - kMinFractionDifference) {
+      
+      _lowFraction = fraction > 0.0 ? fraction : 0.0;
+      self.needsDisplay = true;
+      
+    }
+    
+  } else if (_enteredHighTrackingArea || _draggingHighTrackingArea) {
+    
+    if (_draggingHighTrackingArea == NO) {
+      
+      _draggingHighTrackingArea = YES;
+      _enteredLowTrackingArea = NO;
+      _enteredHighTrackingArea = NO;
+      
+    }
+    
+    if (fraction > _lowFraction + kMinFractionDifference) {
+      
+      _highFraction = fraction <= 1.0 ? fraction : 1.0;
+      self.needsDisplay = true;
+      
+    }
+    
+  }
+  
+}
+
+- (void)mouseUp:(NSEvent *)theEvent {
+  
+  _draggingLowTrackingArea = NO;
+  _draggingHighTrackingArea = NO;
+  
+  [self updateTrackingAreas];
   self.needsDisplay = YES;
   
 }
 
 - (void)mouseExited:(NSEvent *)theEvent {
 
-  _enteredTrackingArea = NO;
+  _enteredLowTrackingArea = NO;
+  _enteredLowTrackingArea = NO;
   self.needsDisplay = YES;
 
 }
 
 - (void)cursorUpdate:(NSEvent *)event {
+  
 
   NSDictionary *userData = event.userData;
   if (userData && [userData[@"type"] isEqualToString:@"low"]) {
