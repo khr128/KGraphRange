@@ -7,6 +7,7 @@
 //
 
 #import "KGRangeViewController.h"
+#import "KGRangeView.h"
 
 @interface KGRangeViewController ()
 
@@ -18,6 +19,9 @@
 
   [super viewDidLoad];
   self.view.layer.backgroundColor = [NSColor redColor].CGColor;
+  
+  KGRangeView *rangeView = (KGRangeView *)self.view;
+  rangeView.rangeDelegate = self.rangeDelegate;
 
 }
 

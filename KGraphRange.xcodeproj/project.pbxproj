@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A85D4431CB6F7280001EE01 /* KGRangeDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A85D4421CB6F7280001EE01 /* KGRangeDelegateImpl.m */; };
 		AE2E24B51CB04B5B0057A3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */; };
 		AE2E24B81CB04B5B0057A3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24B71CB04B5B0057A3DA /* main.m */; };
 		AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2E24BA1CB04B5B0057A3DA /* ViewController.m */; };
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A85D4411CB6F7280001EE01 /* KGRangeDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRangeDelegateImpl.h; sourceTree = "<group>"; };
+		2A85D4421CB6F7280001EE01 /* KGRangeDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRangeDelegateImpl.m; sourceTree = "<group>"; };
+		2AF28C651CB6DCB600703DA0 /* KGraphRangeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGraphRangeDelegate.h; sourceTree = "<group>"; };
 		AE2E24B01CB04B5B0057A3DA /* KGraphRange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGraphRange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2E24B31CB04B5B0057A3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +68,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AF28C631CB6DBE300703DA0 /* Graph Range View */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E24D51CB04CAD0057A3DA /* KGRangeViewController.h */,
+				AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */,
+				AE2E24D81CB0551A0057A3DA /* KGRangeView.h */,
+				AE2E24D91CB0551A0057A3DA /* KGRangeView.m */,
+			);
+			name = "Graph Range View";
+			sourceTree = "<group>";
+		};
+		2AF28C641CB6DC0500703DA0 /* Graph Range Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2AF28C651CB6DCB600703DA0 /* KGraphRangeDelegate.h */,
+				2A85D4411CB6F7280001EE01 /* KGRangeDelegateImpl.h */,
+				2A85D4421CB6F7280001EE01 /* KGRangeDelegateImpl.m */,
+			);
+			name = "Graph Range Delegate";
+			sourceTree = "<group>";
+		};
 		AE2E24A71CB04B5B0057A3DA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 		AE2E24B21CB04B5B0057A3DA /* KGraphRange */ = {
 			isa = PBXGroup;
 			children = (
+				2AF28C641CB6DC0500703DA0 /* Graph Range Delegate */,
+				2AF28C631CB6DBE300703DA0 /* Graph Range View */,
 				AE2E24B31CB04B5B0057A3DA /* AppDelegate.h */,
 				AE2E24B41CB04B5B0057A3DA /* AppDelegate.m */,
 				AE2E24B91CB04B5B0057A3DA /* ViewController.h */,
@@ -93,10 +120,6 @@
 				AE2E24BE1CB04B5B0057A3DA /* Main.storyboard */,
 				AE2E24C11CB04B5B0057A3DA /* Info.plist */,
 				AE2E24B61CB04B5B0057A3DA /* Supporting Files */,
-				AE2E24D51CB04CAD0057A3DA /* KGRangeViewController.h */,
-				AE2E24D61CB04CAD0057A3DA /* KGRangeViewController.m */,
-				AE2E24D81CB0551A0057A3DA /* KGRangeView.h */,
-				AE2E24D91CB0551A0057A3DA /* KGRangeView.m */,
 			);
 			path = KGraphRange;
 			sourceTree = "<group>";
@@ -219,6 +242,7 @@
 			files = (
 				AE2E24DA1CB0551A0057A3DA /* KGRangeView.m in Sources */,
 				AE2E24D71CB04CAD0057A3DA /* KGRangeViewController.m in Sources */,
+				2A85D4431CB6F7280001EE01 /* KGRangeDelegateImpl.m in Sources */,
 				AE2E24BB1CB04B5B0057A3DA /* ViewController.m in Sources */,
 				AE2E24B81CB04B5B0057A3DA /* main.m in Sources */,
 				AE2E24B51CB04B5B0057A3DA /* AppDelegate.m in Sources */,

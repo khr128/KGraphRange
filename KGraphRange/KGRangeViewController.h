@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "KGraphRangeDelegate.h"
 
 @interface KGRangeViewController : NSViewController
+
+@property (strong) IBOutlet id<KGraphRangeDelegate> rangeDelegate;
 
 @end

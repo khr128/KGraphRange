@@ -7,10 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "KGraphRangeDelegate.h"
 
 @interface KGRangeView : NSView
 
-@property CGFloat lowFraction;
-@property CGFloat highFraction;
+//@property CGFloat lowFraction;
+//@property CGFloat highFraction;
+
+@property (weak) id<KGraphRangeDelegate> rangeDelegate;
 
 @end

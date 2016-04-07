@@ -33,9 +33,6 @@ static CGFloat kMinFractionDifference = 0.01;
 
 - (void)awakeFromNib {
 
-  self.lowFraction = 0.2f;
-  self.highFraction = 0.57f;
-
   _selectedPartColor = [NSColor colorWithRed:24.0f / 255.0f green:124.0f / 255.0f blue:31.0f / 255.0f alpha:1.0f];
   _unselectedPartColor = [NSColor colorWithRed:234.0f / 255.0f green:20.0f / 255.0f blue:3.0f / 255.0f alpha:1.0f];
   _trackingAreaColor = [NSColor colorWithRed:220.0f / 255.0f green:214.0f / 255.0f blue:214.0f / 255.0f alpha:0.3f];
@@ -51,8 +48,8 @@ static CGFloat kMinFractionDifference = 0.01;
 - (void)makeSelectedPartRect {
 
   CGFloat w = NSWidth(self.bounds);
-  CGFloat dx1 = _lowFraction * w;
-  CGFloat dx2 = _highFraction * w;
+  CGFloat dx1 = self.rangeDelegate.lowFraction * w;
+  CGFloat dx2 = self.rangeDelegate.highFraction * w;
   _selectedPartRect = NSMakeRect(dx1, NSMinY(self.bounds), dx2 - dx1, NSHeight(self.bounds));
 
 }
@@ -84,7 +81,7 @@ static CGFloat kMinFractionDifference = 0.01;
 
   BOOL isLow = [trackingAreaType isEqualToString:@"low"];
 
-  CGFloat fraction =  isLow ? _lowFraction : _highFraction;
+  CGFloat fraction =  isLow ? self.rangeDelegate.lowFraction : self.rangeDelegate.highFraction;
   CGFloat w = NSWidth(self.bounds);
   CGFloat xc = fraction * w;
 
@@ -165,9 +162,6 @@ static CGFloat kMinFractionDifference = 0.01;
   
   CGFloat fraction = localPoint.x / NSWidth(self.bounds);
   
-  NSLog(@"Local point: (%g, %g)", localPoint.x, localPoint.y);
-  NSLog(@"Low x: %g, fraction: %g", _lowFraction * NSWidth(self.bounds), fraction);
-  
   if (_enteredLowTrackingArea || _draggingLowTrackingArea) {
     
     if (_draggingLowTrackingArea == NO) {
@@ -178,9 +172,9 @@ static CGFloat kMinFractionDifference = 0.01;
       
     }
     
-    if (fraction < _highFraction - kMinFractionDifference) {
+    if (fraction < self.rangeDelegate.highFraction - kMinFractionDifference) {
       
-      _lowFraction = fraction > 0.0 ? fraction : 0.0;
+      self.rangeDelegate.lowFraction = fraction > 0.0 ? fraction : 0.0;
       self.needsDisplay = true;
       
     }
@@ -195,9 +189,9 @@ static CGFloat kMinFractionDifference = 0.01;
       
     }
     
-    if (fraction > _lowFraction + kMinFractionDifference) {
+    if (fraction > self.rangeDelegate.lowFraction + kMinFractionDifference) {
       
-      _highFraction = fraction <= 1.0 ? fraction : 1.0;
+      self.rangeDelegate.highFraction = fraction <= 1.0 ? fraction : 1.0;
       self.needsDisplay = true;
       
     }
@@ -226,7 +220,6 @@ static CGFloat kMinFractionDifference = 0.01;
 
 - (void)cursorUpdate:(NSEvent *)event {
   
-
   NSDictionary *userData = event.userData;
   if (userData && [userData[@"type"] isEqualToString:@"low"]) {
 
@@ -237,7 +230,6 @@ static CGFloat kMinFractionDifference = 0.01;
     [self addCursorRect:_highTrackingRect cursor:[NSCursor resizeLeftRightCursor]];
 
   }
-
 
 }
 
